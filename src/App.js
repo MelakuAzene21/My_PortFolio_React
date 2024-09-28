@@ -4,8 +4,18 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Works from "./components/Works";
 import Skills from "./components/Skills";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use the CDN link in your index.html
+import React, { useEffect } from 'react';
+import Services from "./components/Services";
 
 export default function App(){
+  useEffect(() => { 
+        AOS.init({
+      duration: 1000, // Animation duration
+    });
+  }, []);
+
   return(
     <div>
       <Navbar />
@@ -13,6 +23,7 @@ export default function App(){
       <About />
       <Skills />
       <Works />
+      <Services/>
       <Contact />
     </div>
   )

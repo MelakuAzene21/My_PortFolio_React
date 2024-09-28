@@ -16,9 +16,9 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav);
 
     return (
-        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-30'>
             <div>
-                <h1 className=' font-thin text-2xl italic font-serif'>TB</h1>
+                <h1 className=' font-thin text-2xl italic font-serif'>MA</h1>
             </div>
             {/* menu */}
             <ul className='hidden md:flex gap-x-8'>
@@ -39,7 +39,12 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link to='work' smooth={true} duration={500}>
-                        Work
+                        Projects
+                    </Link>
+                </li>
+                <li>
+                    <Link to='service' smooth={true} duration={500}>
+                        Services
                     </Link>
                 </li>
                 <li>
@@ -83,6 +88,14 @@ const Navbar = () => {
                         Work
                     </Link>
                 </li>
+               <li className='py-6 text-4xl'>
+                    {' '}
+                    <Link onClick={handleClick} to='service' smooth={true} duration={500}>
+                        Services
+                    </Link>
+                </li>
+
+
                 <li className='py-6 text-4xl'>
                     {' '}
                     <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
