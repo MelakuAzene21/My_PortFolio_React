@@ -50,10 +50,10 @@ const About = () => {
         <div
             name="about"
             id="about"
-            className="w-full bg-[#0a192f] text-gray-300"
+            className="w-full  bg-gradient-to-b from-[#0a192f] to-[#112240]  text-gray-300"
         >
-            <div className="flex flex-col justify-center items-center w-full h-full">
-                <div className="py-16 rounded-md bg-cyan-800 flex flex-col justify-center items-center w-4/6">
+            <div className="flex flex-col justify-center items-center w-full h-full ">
+                <div className="py-16 rounded-3xl my-4 bg-gray-900 flex flex-col justify-center items-center w-4/6">
                     <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 mb-4">
                         <div className="sm:text-right pb-8 pl-4">
                             <p className="text-4xl font-bold inline border-b-4 border-cyan-500">
@@ -79,7 +79,7 @@ const About = () => {
                 </div>
 
                 {/* Achievements Section */}
-                <div className="py-16 rounded-md bg-cyan-800 flex flex-col justify-center items-center w-4/6 mt-8">
+                <div className="py-16 rounded-md bg-gray-800 flex flex-col justify-center items-center w-4/6 mt-8">
                     <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 mb-4">
                         <div className="sm:text-right pb-8 pl-4">
                             <p className="text-4xl font-bold inline border-b-4 border-cyan-500">
@@ -102,7 +102,7 @@ const About = () => {
                 </div>
 
                 {/* Certifications Section */}
-                <div className="py-16 rounded-md bg-cyan-800 flex flex-col justify-center items-center w-4/6 mt-8">
+                <div className="py-16 rounded-md bg-gray-800 flex flex-col justify-center items-center w-4/6 mt-8">
                     <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 mb-4">
                         <div className="sm:text-right pb-8 pl-4">
                             <p className="text-4xl font-bold inline border-b-4 border-cyan-500">

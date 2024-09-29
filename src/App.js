@@ -8,7 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use the CDN link in your index.html
 import React, { useEffect } from 'react';
 import Services from "./components/Services";
-
+import Resume from "./components/Resume"
 export default function App(){
   useEffect(() => { 
         AOS.init({
@@ -19,11 +19,12 @@ export default function App(){
   return(
     <div>
       <Navbar />
-      <Home />
+      <Home  />
       <About />
       <Skills />
       <Works />
-      <Services/>
+      <Services />
+      <Resume />
       <Contact />
     </div>
   )

@@ -13,17 +13,17 @@ const WorkItem = ({ title, description, demoLink, codeLink, index }) => {
             data-aos-delay={index * 100} // Delay for each item
         >
             {/* Hover Effects */}
-            <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
+            <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col sm:my-6 '>
                 <span className='text-lg font-bold text-white tracking-wider'>{title}</span>
                 <p className='text-center'>{description}</p>
                 <div className='pt-8 text-center'>
                     <a href={demoLink}>
-                        <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                        <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg sm:text-sm'>
                             Demo
                         </button>
                     </a>
                     <a href={codeLink}>
-                        <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                        <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg sm:text-sm'>
                             Code
                         </button>
                     </a>
@@ -35,61 +35,31 @@ const WorkItem = ({ title, description, demoLink, codeLink, index }) => {
 
 const Works = () => {
     const workItems = [
-        {
-            title: 'Ecommerce',
-            description: 'An Ecommerce built with React and MongoDB',
-            demoLink: '/',
-            codeLink: '/',
-        },
-        {
-            title: 'Currency Converter',
-            description: 'Currency Converter web application built with React and MongoDB',
-            demoLink: '/',
-            codeLink: '/',
-        },
-        {
-            title: 'Rick and Morty',
-            description: 'Rick and Morty web application built with React and MongoDB',
-            demoLink: '/',
-            codeLink: '/',
-        },
-        {
-            title: 'To-Do List',
-            description: 'A To-Do list application built with React and MongoDB',
-            demoLink: '/',
-            codeLink: '/',
-        },
-        {
-            title: 'Blog App',
-            description: 'A Blog web application built with React and MongoDB',
-            demoLink: '/',
-            codeLink: '/',
-        },
-        {
-            title: 'Age Calculator',
-            description: 'Age Calculator web application built with React and MongoDB',
-            demoLink: '/',
-            codeLink: '/',
-        },
+        { title: 'Ecommerce', description: 'An Ecommerce built with React and MongoDB', demoLink: '/', codeLink: '/' },
+        { title: 'Currency Converter', description: 'Currency Converter built with React and MongoDB', demoLink: '/', codeLink: '/' },
+        { title: 'Rick and Morty', description: 'Rick and Morty app built with React and MongoDB', demoLink: '/', codeLink: '/' },
+        { title: 'To-Do List', description: 'A To-Do list app built with React and MongoDB', demoLink: '/', codeLink: '/' },
+        { title: 'Blog App', description: 'A Blog app built with React and MongoDB', demoLink: '/', codeLink: '/' },
+        { title: 'Age Calculator', description: 'Age Calculator built with React and MongoDB', demoLink: '/', codeLink: '/' },
     ];
 
     useEffect(() => {
-        AOS.init({
-            duration: 1000, // Animation duration
-        });
+        AOS.init({ duration: 1000 });
     }, []);
 
     return (
-        <div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
-            <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+        <div name='work' className='w-full bg-[#0a192f] text-gray-300'>
+            <div className='max-w-[1000px] mx-auto p-4 sm:p-2 flex flex-col justify-center w-full h-auto'>
                 <div className='pb-8 w-full flex justify-center items-center flex-col'>
-                    <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-cyan-500'>
+                    <p className='text-4xl font-bold border-b-4 text-gray-300 border-cyan-500'>
                         Projects
                     </p>
-                    <p className='py-6 text-2xl'>Check out some of my most recent Projects</p>
+                    <p className='py-6 text-2xl sm:text-xl text-center'>
+                        Check out some of my recent projects
+                    </p>
                 </div>
-                {/* Container */}
-                <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+                {/* Grid Container */}
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
                     {workItems.map((item, index) => (
                         <WorkItem
                             key={index}
@@ -97,7 +67,7 @@ const Works = () => {
                             description={item.description}
                             demoLink={item.demoLink}
                             codeLink={item.codeLink}
-                            index={index} // Pass index for delay
+                            index={index}
                         />
                     ))}
                 </div>

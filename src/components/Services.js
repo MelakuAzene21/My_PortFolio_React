@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import AOS from 'aos'; // Import AOS
-import 'aos/dist/aos.css'; // Import AOS CSS
-import { FaCode, FaPaintBrush, FaMobileAlt, FaDatabase, FaUserShield } from 'react-icons/fa'; // Import icons
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { FaCode, FaPaintBrush, FaMobileAlt, FaDatabase, FaUserShield } from 'react-icons/fa';
 
 const Services = () => {
     const services = [
@@ -33,29 +33,26 @@ const Services = () => {
     ];
 
     useEffect(() => {
-        AOS.init({
-            duration: 1000, // Animation duration
-        });
+        AOS.init({ duration: 1000 });
     }, []);
 
     return (
-        <div name='services' id='service' className='w-full h-screen bg-gradient-to-b from-[#0a192f] to-[#1e2a38] text-gray-300 flex items-center justify-center'>
-            {/* Container */}
-            <div className='max-w-[1000px] mx-auto p-4 flex flex-col w-full h-full'>
+        <div name='services' id='service' className='w-full min-h-screen bg-gradient-to-b from-[#0a192f] to-[#1e2a38] text-gray-300 flex items-center justify-center'>
+            <div className='max-w-[1000px] mx-auto p-4 flex flex-col w-full'>
                 <div className='w-full flex justify-center items-center flex-col mb-7'>
-                    <p className='text-4xl font-bold inline border-b-4 border-cyan-500 text-center'>Services</p>
-                    <p className='py-4 text-2xl'>Here are the services I offer:</p>
+                    <p className='text-4xl font-bold border-b-4 border-cyan-500'>Services</p>
+                    <p className='py-4 text-2xl text-center'>Here are the services I offer:</p>
                 </div>
                 <div className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center py-8'>
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className='bg-[#0a192f]  rounded-lg shadow-lg transition-transform duration-300 p-6 flex flex-col items-center hover:bg-cyan-500 hover:shadow-2xl hover:scale-105' // Updated hover effects
-                            data-aos="fade-up" // AOS animation
-                            data-aos-delay={index * 100} // Delay for each item
+                            className='bg-[#0a192f] rounded-lg shadow-lg p-6 hover:bg-cyan-500 transition-transform duration-300 hover:scale-105'
+                            data-aos="fade-up"
+                            data-aos-delay={index * 100}
                         >
-                            {service.icon} {/* Icon for each service */}
-                            <h3 className='text-xl font-bold mb-2 text-white'>{service.title}</h3>
+                            {service.icon}
+                            <h3 className='text-xl font-bold text-white mb-2'>{service.title}</h3>
                             <p className='text-gray-300'>{service.description}</p>
                         </div>
                     ))}
