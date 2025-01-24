@@ -9,8 +9,8 @@ body {
     background:linear-gradient(to bottom, #0a192f, #1e2a38);
 }
 
-.container1 {
-    background: blue;
+/* .container1 {
+    background: rgba(57, 50, 250, 0.187);
     border-radius: 10px;
     color: white;
     max-width: 800px;
@@ -18,33 +18,64 @@ body {
     height: 1250px;
     padding: 20px;
     box-shadow: 0 2px 20px(0 0 0 0.3);
+} */
+.container1 {
+    background: rgba(57, 50, 250, 0.187);
+    border-radius: 10px;
+    color: white;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
+.container1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
 .header1 {
     text-align: center;
 }
 
 .header1 h1 {
-    margin-bottom: 10px;
+    font-size: 20px;
+    color: green;
+    
 }
 
 .header1 h3 {
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 400;
+    color: #b0c4de;
 }
-
-.img-area1 {
+/* .img-area1 {
     object-fit:cover;
     width: 250px;
     height: 350px;
     border-radius: 50%;
     overflow: hidden;
     margin: 25px auto;
+    margin-bottom: 0;
     padding: 10px;
     border: 15px groove deepskyblue;
-}
+} */
 
+.img-area1 {
+    width: 250px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 25px auto;
+    margin-bottom: 0;
+    padding: 10px;
+    border: 15px groove deepskyblue;
+    transition: border 0.3s ease, transform 0.3s ease;
+}
+.img-area1:hover {
+    border-color: #ff7f50;
+    transform: scale(1.05);
+}
 .img-area1 img {
     width: 100%;
 }
@@ -60,12 +91,21 @@ body {
 }
 
 .left1 p {
-    line-height: 2;
+    line-height: 1.5;
 }
 
 .left1 ul li {
-    line-height: 2;
+    line-height: 1.8
 }
+/* 
+h2 {
+    background-color: white;
+    padding: 15px;
+    color: black;
+    margin: 30px 0;
+    font-size: 20px;
+    border-radius: 0 50px 50px 0;
+} */
 
 h2 {
     background-color: white;
@@ -74,6 +114,12 @@ h2 {
     margin: 30px 0;
     font-size: 20px;
     border-radius: 0 50px 50px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h2:hover {
+    background-color: #ff7f50;
+    color: white;
 }
 
 .right {
