@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import AOS from "aos"; // Import AOS
 import "aos/dist/aos.css"; // Import AOS CSS
 import Card from "./Card"; // Import Card component
-
+import minab from "../assets/Images/Full page photo.jpg"; // Import image
+import udacity from "../assets/Images/CERTIFICATE_UDACITY.jpg"
 const About = () => {
     useEffect(() => {
         AOS.init({
@@ -10,40 +11,40 @@ const About = () => {
         });
     }, []);
 
-    const achievements = [
-        {
-            title: "Completed Full-Stack Bootcamp",
-            description: "Completed a rigorous bootcamp on full-stack web development.",
-            image: "path_to_your_certificate_image1.jpg", // Replace with actual path
-        },
-        {
-            title: "Project Management App",
-            description: "Developed a project management app used by over 100 users.",
-            image: "path_to_your_certificate_image2.jpg", // Replace with actual path
-        },
-        {
-            title: "Published Articles",
-            description: "Published several articles on web development topics.",
-            image: "path_to_your_certificate_image3.jpg", // Replace with actual path
-        },
-    ];
+    // const achievements = [
+    //     {
+    //         title: "Completed Full-Stack Bootcamp",
+    //         description: "Completed a rigorous bootcamp on full-stack web development.",
+    //         image: "path_to_your_certificate_image1.jpg", // Replace with actual path
+    //     },
+    //     {
+    //         title: "Project Management App",
+    //         description: "Developed a project management app used by over 100 users.",
+    //         image: "path_to_your_certificate_image2.jpg", // Replace with actual path
+    //     },
+    //     {
+    //         title: "Published Articles",
+    //         description: "Published several articles on web development topics.",
+    //         image: "path_to_your_certificate_image3.jpg", // Replace with actual path
+    //     },
+    // ];
 
     const certifications = [
         {
             title: "Certified Full Stack Web Developer",
             description: "[Certification Authority]",
-            image: "path_to_your_certificate_image4.jpg", // Replace with actual path
+            image: minab, // Replace with actual path
         },
         {
             title: "JavaScript Essentials",
             description: "[Certification Authority]",
-            image: "path_to_your_certificate_image5.jpg", // Replace with actual path
+            image:udacity,
         },
-        {
-            title: "React Development",
-            description: "[Certification Authority]",
-            image: "path_to_your_certificate_image6.jpg", // Replace with actual path
-        },
+        // {
+        //     title: "React Development",
+        //     description: "[Certification Authority]",
+        //     image: "path_to_your_certificate_image6.jpg", // Replace with actual path
+        // },
     ];
 
     return (
@@ -77,8 +78,8 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-
-                {/* Achievements Section */}
+{/* 
+                
                 <div className="py-16 rounded-md bg-gray-800 flex flex-col justify-center items-center w-4/6 mt-8">
                     <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 mb-4">
                         <div className="sm:text-right pb-8 pl-4">
@@ -99,7 +100,7 @@ const About = () => {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
 
                 {/* Certifications Section */}
                 <div className="py-16 rounded-md bg-gray-800 flex flex-col justify-center items-center w-4/6 mt-8">
