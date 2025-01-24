@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import AOS from "aos"; // Import AOS
 import "aos/dist/aos.css"; // Import AOS CSS
-import Card from "./Card"; // Import Card component
+// import Card from "./Card"; // Import Card component
 import minab from "../assets/Images/Full page photo.jpg"; // Import image
 import udacity from "../assets/Images/CERTIFICATE_UDACITY.jpg"
+import "../animate-image.css"
+import BDU1405424UR from '../assets/BDU1405424UR.jpg';
 const About = () => {
     useEffect(() => {
         AOS.init({
@@ -11,42 +13,16 @@ const About = () => {
         });
     }, []);
 
-    // const achievements = [
-    //     {
-    //         title: "Completed Full-Stack Bootcamp",
-    //         description: "Completed a rigorous bootcamp on full-stack web development.",
-    //         image: "path_to_your_certificate_image1.jpg", // Replace with actual path
-    //     },
-    //     {
-    //         title: "Project Management App",
-    //         description: "Developed a project management app used by over 100 users.",
-    //         image: "path_to_your_certificate_image2.jpg", // Replace with actual path
-    //     },
-    //     {
-    //         title: "Published Articles",
-    //         description: "Published several articles on web development topics.",
-    //         image: "path_to_your_certificate_image3.jpg", // Replace with actual path
-    //     },
-    // ];
-
     const certifications = [
         {
-            title: "Certified Full Stack Web Developer",
-            description: "[Certification Authority]",
+            description: "Full Stack Web Developer",
             image: minab, // Replace with actual path
         },
         {
-            title: "JavaScript Essentials",
-            description: "[Certification Authority]",
+            description: "JavaScript Essentials",
             image:udacity,
         },
-        // {
-        //     title: "React Development",
-        //     description: "[Certification Authority]",
-        //     image: "path_to_your_certificate_image6.jpg", // Replace with actual path
-        // },
-    ];
-
+         ];
     return (
         <div
             name="about"
@@ -54,7 +30,7 @@ const About = () => {
             className="w-full  bg-gradient-to-b from-[#0a192f] to-[#112240]  text-gray-300"
         >
             <div className="flex flex-col justify-center items-center w-full h-full ">
-                <div className="py-16 rounded-3xl my-4 bg-gray-900 flex flex-col justify-center items-center w-4/6">
+                <div className="py-16 rounded-3xl my-4 bg-gray-900 flex flex-col justify-center items-center w-4/6 shadow-lg shadow-cyan-500/50">
                     <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 mb-4">
                         <div className="sm:text-right pb-8 pl-4">
                             <p className="text-4xl font-bold inline border-b-4 border-cyan-500">
@@ -63,11 +39,13 @@ const About = () => {
                         </div>
                         <div></div>
                     </div>
-                    <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
+                    {/* <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
                         <div className="sm:text-right text-4xl font-bold">
                             <p>
-                                Hi. I'm Melaku, nice to meet you. Please take a look around.
+                                Hi. I'm <span className="text-cyan-500 font-bold">Melaku</span>, nice to meet you.
+                                Please take a look around.
                             </p>
+
                         </div>
                         <div>
                             <p>
@@ -76,34 +54,51 @@ const About = () => {
                                 technical writer—simplifying topics/concepts on the web.
                             </p>
                         </div>
-                    </div>
-                </div>
-{/* 
-                
-                <div className="py-16 rounded-md bg-gray-800 flex flex-col justify-center items-center w-4/6 mt-8">
-                    <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 mb-4">
-                        <div className="sm:text-right pb-8 pl-4">
-                            <p className="text-4xl font-bold inline border-b-4 border-cyan-500">
-                                Achievements
-                            </p>
+                    </div> */}
+
+                    <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
+                        {/* Left Section: Image */}
+                        <div
+                            className="flex justify-center items-center"
+                            data-aos="fade-right"
+                        >
+                            <img
+                                src={BDU1405424UR}
+                                alt="Melaku"
+                                className="rounded-lg shadow-lg shadow-cyan-500/50 w-3/4 sm:w-full max-h-[300px] object-contain"
+                            />
                         </div>
-                        <div></div>
-                    </div>
-                    <div className="max-w-[1000px] w-full grid sm:grid-cols-3 gap-8 px-4">
-                        {achievements.map((achievement, index) => (
-                            <div key={index} data-aos="fade-up">
-                                <Card
-                                    title={achievement.title}
-                                    description={achievement.description}
-                                    image={achievement.image}
-                                />
+
+                        {/* Right Section: Text */}
+                        <div
+                            className="flex flex-col gap-6 text-gray-300"
+                            data-aos="fade-left"
+                        >
+                            <div className="flex items-center gap-4">
+                                <span className="text-cyan-500 text-2xl">
+                                    <i className="fas fa-code"></i>
+                                </span>
+                                <p>
+                                    A <span className="text-cyan-500 font-bold">Full Stack Web Developer</span> with experience in building responsive and scalable web apps.
+                                </p>
                             </div>
-                        ))}
+                            <div className="flex items-center gap-4">
+                                <span className="text-cyan-500 text-2xl">
+                                    <i className="fas fa-pen-alt"></i>
+                                </span>
+                                <p>
+                                    Passionate <span className="text-cyan-500 font-bold">Technical Writer</span>, simplifying concepts and sharing knowledge.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div> */}
+
+
+                </div>
+
 
                 {/* Certifications Section */}
-                <div className="py-16 rounded-md bg-gray-800 flex flex-col justify-center items-center w-4/6 mt-8">
+                <div className="py-16 rounded-3xl my-4 bg-gray-900 flex flex-col justify-center items-center w-4/6 shadow-lg shadow-cyan-500/50">
                     <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 mb-4">
                         <div className="sm:text-right pb-8 pl-4">
                             <p className="text-4xl font-bold inline border-b-4 border-cyan-500">
@@ -112,17 +107,33 @@ const About = () => {
                         </div>
                         <div></div>
                     </div>
-                    <div className="max-w-[1000px] w-full grid sm:grid-cols-3 gap-8 px-4">
+                    {/* <div className="max-w-[1000px] w-full grid sm:grid-cols-3 gap-8 px-4">
                         {certifications.map((certification, index) => (
-                            <div key={index} data-aos="fade-up">
+                            <div key={index}  data-aos="fade-up">
                                 <Card
-                                    title={certification.title}
                                     description={certification.description}
                                     image={certification.image}
                                 />
                             </div>
                         ))}
+                    </div> */}
+                    <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-8 px-4">
+                        {certifications.map((certification, index) => (
+                            <div
+                                key={index}
+                                className="flex items-center gap-4 mb-8"
+                                data-aos="fade-up"
+                            >
+                                <img
+                                    src={certification.image}
+                                    alt="certification"
+                                    className="card-image w-full h-auto border-cyan-500"
+                                />
+                                {/* <p className="text-lg text-gray-300">{certification.description}</p> */}
+                            </div>
+                        ))}
                     </div>
+
                 </div>
             </div>
         </div>
