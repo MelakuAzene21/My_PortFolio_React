@@ -26,7 +26,11 @@ const Resume = () => {
                         <li>Javascript</li>
                         <li>React</li>
                         <li>Node.js</li>
-                        <li>SQL</li>
+                        <li>Express.js</li>
+                        <li>TypesScript</li>
+                        <li>Next.js</li>
+                        <li>MongoDB</li>
+                        <li>MySQL</li>
                     </ul>
 
                     <h2>Education</h2>
@@ -37,10 +41,10 @@ const Resume = () => {
                 <div className="right">
                     <h2>Work Experience</h2>
                     <h3>Minab Company</h3>
-                    <p><strong>Position:</strong> Web Developer</p>
+                    <p><strong>Position:</strong> Intern Web Developer</p>
                     <p><strong>Duration:</strong> 2024-</p>
                     <ul>
-                        <li>Developed and maintained web applications using React, Node.js, and SQL</li>
+                        <li>Developed and maintained web applications using React, Node.js, and MySQL</li>
                         <li>Implemented responsive design using Flexbox and media queries</li>
                         <li>Collaborated with cross-functional teams to deliver high-quality web products</li>
                     </ul>

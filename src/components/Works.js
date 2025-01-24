@@ -35,12 +35,12 @@ const WorkItem = ({ title, description, demoLink, codeLink, index }) => {
 
 const Works = () => {
     const workItems = [
-        { title: 'Ecommerce', description: 'An Ecommerce built with React and MongoDB', demoLink: '/', codeLink: '/' },
-        { title: 'Currency Converter', description: 'Currency Converter built with React and MongoDB', demoLink: '/', codeLink: '/' },
-        { title: 'Rick and Morty', description: 'Rick and Morty app built with React and MongoDB', demoLink: '/', codeLink: '/' },
-        { title: 'To-Do List', description: 'A To-Do list app built with React and MongoDB', demoLink: '/', codeLink: '/' },
-        { title: 'Blog App', description: 'A Blog app built with React and MongoDB', demoLink: '/', codeLink: '/' },
-        { title: 'Age Calculator', description: 'Age Calculator built with React and MongoDB', demoLink: '/', codeLink: '/' },
+        { title: 'Ecommerce', description: 'An Ecommerce built with React and MongoDB,Node', demoLink: 'https://e-market-hbf7.onrender.com', codeLink: '/' },
+        { title: 'Currency Converter', description: 'Currency Converter built with React', demoLink: 'https://currency-converter-mern-melekus-websites.onrender.com/', codeLink: '/' },
+        { title: 'Rick and Morty', description: 'Rick and Morty app built with React and MongoDB', demoLink: 'https://rick-and-morty-melaku.vercel.app', codeLink: '/' },
+        { title: 'News-App', description: 'News appp used to get new information across the world', demoLink: 'https://news-website-in-node.onrender.com/', codeLink: '/' },
+        { title: 'Weather App', description: 'A Weather app built with React and and used to forecasting...', demoLink: 'https://weather-forecast-web-app-chi.vercel.app/', codeLink: '/' },
+        { title: 'Event Management System', description: 'Event Creation ,ticket selling...', demoLink: '/', codeLink: '/' },
     ];
 
     useEffect(() => {
