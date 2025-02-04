@@ -9,7 +9,7 @@ import {
 } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { Link } from 'react-scroll';
-
+import BDU1405424R from '../assets/BDU1405424UR.jpg'
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
@@ -18,8 +18,8 @@ const Navbar = () => {
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-30'>
             <div>
 
-                <Link to='home' smooth={true} duration={500}>
-                    <h1 className=' font-thin text-2xl italic font-serif'>MA</h1>
+                <Link to='home' smooth={true} duration={500} >
+                <img src={BDU1405424R} alt='MA' className='cursor-pointer  w-10 h-10 rounded-full'/>
                 </Link>
             </div>
             {/* menu */}
