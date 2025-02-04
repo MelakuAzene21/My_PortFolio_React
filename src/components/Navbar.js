@@ -9,7 +9,7 @@ import {
 } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { Link } from 'react-scroll';
-import BDU1405424R from '../assets/BDU1405424UR.jpg'
+import BDU1405424R from '../assets/portMAini.png'
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
