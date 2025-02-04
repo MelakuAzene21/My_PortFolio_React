@@ -30,7 +30,7 @@ const About = () => {
             className="w-full  bg-gradient-to-b from-[#0a192f] to-[#112240]  text-gray-300"
         >
             <div className="flex flex-col justify-center items-center w-full h-full ">
-                <div className="py-16 rounded-3xl my-4 bg-gray-900 flex flex-col justify-center items-center w-4/6 shadow-lg shadow-cyan-500/50">
+                <div className="py-16 rounded-3xl my-4 bg-gray-900 flex flex-col justify-center items-center w-full shadow-lg shadow-cyan-500/50">
                     <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 mb-4">
                         <div className="sm:text-right pb-8 pl-4">
                             <p className="text-4xl font-bold inline border-b-4 border-cyan-500">
@@ -39,23 +39,7 @@ const About = () => {
                         </div>
                         <div></div>
                     </div>
-                    {/* <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
-                        <div className="sm:text-right text-4xl font-bold">
-                            <p>
-                                Hi. I'm <span className="text-cyan-500 font-bold">Melaku</span>, nice to meet you.
-                                Please take a look around.
-                            </p>
-
-                        </div>
-                        <div>
-                            <p>
-                                A Full Stack Web Developer with experience in building Responsive and
-                                Scalable Web apps. In addition to software development, I am also a
-                                technical writer—simplifying topics/concepts on the web.
-                            </p>
-                        </div>
-                    </div> */}
-
+                   
                     <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
                         {/* Left Section: Image */}
                         <div
@@ -94,30 +78,16 @@ const About = () => {
                     </div>
 
 
-                </div>
-
-
-                {/* Certifications Section */}
-                <div className="py-16 rounded-3xl my-4 bg-gray-900 flex flex-col justify-center items-center w-4/6 shadow-lg shadow-cyan-500/50">
+           
                     <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 mb-4">
-                        <div className="sm:text-right pb-8 pl-4">
-                            <p className="text-4xl font-bold inline border-b-4 border-cyan-500">
+                        <div className="sm:text-right pb-8 pl-4 mt-6">
+                            <h4 className="text-4xl font-bold inline border-b-4 mt-3 border-cyan-500">
                                 Certifications
-                            </p>
+                            </h4>
                         </div>
-                        <div></div>
                     </div>
-                    {/* <div className="max-w-[1000px] w-full grid sm:grid-cols-3 gap-8 px-4">
-                        {certifications.map((certification, index) => (
-                            <div key={index}  data-aos="fade-up">
-                                <Card
-                                    description={certification.description}
-                                    image={certification.image}
-                                />
-                            </div>
-                        ))}
-                    </div> */}
-                    <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-8 px-4">
+                   
+                    <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-8 px-4 mx-20">
                         {certifications.map((certification, index) => (
                             <div
                                 key={index}
@@ -129,7 +99,6 @@ const About = () => {
                                     alt="certification"
                                     className="card-image w-full h-auto border-cyan-500"
                                 />
-                                {/* <p className="text-lg text-gray-300">{certification.description}</p> */}
                             </div>
                         ))}
                     </div>
