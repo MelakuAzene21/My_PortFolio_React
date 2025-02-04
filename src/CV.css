@@ -9,16 +9,7 @@ body {
     background:linear-gradient(to bottom, #0a192f, #1e2a38);
 }
 
-/* .container1 {
-    background: rgba(57, 50, 250, 0.187);
-    border-radius: 10px;
-    color: white;
-    max-width: 800px;
-    margin: 60px auto;
-    height: 1250px;
-    padding: 20px;
-    box-shadow: 0 2px 20px(0 0 0 0.3);
-} */
+
 .container1 {
     background: rgba(57, 50, 250, 0.187);
     border-radius: 10px;
@@ -49,17 +40,7 @@ body {
     font-weight: 400;
     color: #b0c4de;
 }
-/* .img-area1 {
-    object-fit:cover;
-    width: 250px;
-    height: 350px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 25px auto;
-    margin-bottom: 0;
-    padding: 10px;
-    border: 15px groove deepskyblue;
-} */
+
 
 .img-area1 {
     width: 250px;
