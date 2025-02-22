@@ -60,7 +60,7 @@ const Works = () => {
     }, []);
 
     return (
-        <div name='work' className='w-full bg-[#0a192f] text-gray-300 py-12'>
+        <div name='work' className='w-fulldark:bg-gray-900 dark:text-gray-300 py-12'>
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-auto'>
                 <div className='pb-8 w-full flex justify-center items-center flex-col'>
                     <p className='text-4xl font-bold border-b-4 text-gray-300 border-cyan-500'>

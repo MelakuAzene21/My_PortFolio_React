@@ -34,17 +34,17 @@ const Contact = () => {
     return (
         <div
             name="contact"
-            className="w-full min-h-screen bg-gradient-to-b from-[#0a192f] to-[#1e2a38] flex justify-center items-center p-4"
+            className="w-full min-h-screen dark:bg-gray-900 dark:text-gray-300    flex justify-center items-center p-4"
         >
-            <div className="flex flex-col max-w-[600px] w-full">
+            <div className="flex flex-col max-w-[600px] w-full ">
                 <div
-                    className="pb-8 flex flex-col justify-center w-full h-full items-center"
+                    className="pb-8 flex flex-col justify-center w-full h-full items-center  text-gray-800 dark:text-gray-300"
                     data-aos="fade-down"
                 >
-                    <p className="text-4xl font-bold inline border-b-4 border-cyan-500 text-gray-300">
+                    <p className="text-4xl font-bold inline border-b-4 border-cyan-500 ">
                         Contact
                     </p>
-                    <p className="text-gray-300 py-4 text-center">
+                    <p className=" py-4 text-center">
                         Feel free to reach out and send me a message!
                     </p>
                 </div>
@@ -78,7 +78,7 @@ const Contact = () => {
                         onChange={handleChange}
                     ></textarea>
                     <button
-                        className="text-white border-2 border-cyan-500 hover:bg-cyan-500 hover:border-transparent px-6 py-3 mx-auto rounded-full shadow-lg transition-transform duration-300 hover:scale-110"
+                        className="dark:text-white text-gray-700 border-2 border-cyan-500 hover:bg-cyan-500 hover:border-transparent px-6 py-3 mx-auto rounded-full shadow-lg transition-transform duration-300 hover:scale-110"
                         type="submit"
                     >
                         Let's Collaborate

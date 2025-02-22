@@ -89,9 +89,9 @@ h2 {
 } */
 
 h2 {
-    background-color: white;
+    background-color: #5073ff;
     padding: 15px;
-    color: black;
+    color: white;
     margin: 30px 0;
     font-size: 20px;
     border-radius: 0 50px 50px 0;
@@ -99,7 +99,7 @@ h2 {
 }
 
 h2:hover {
-    background-color: #ff7f50;
+    background-color: #50ff67be;
     color: white;
 }
 

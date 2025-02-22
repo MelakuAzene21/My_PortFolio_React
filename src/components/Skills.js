@@ -28,7 +28,7 @@ const Skills = () => {
     const animations = ['fade-up', 'fade-down', 'fade-left', 'fade-right'];
 
     return (
-        <div name='skills' className='w-full h-auto bg-gradient-to-b from-[#0a192f] to-[#1e2a38] text-gray-300 py-12'>
+        <div name='skills' className='w-full h-auto dark:bg-gray-900 dark:text-gray-300 text-gray-700 py-12'>
             {/* Container */}
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col w-full h-full'>
                 <div className='w-full flex justify-center items-center flex-col mb-7'>
@@ -41,7 +41,7 @@ const Skills = () => {
                 </div>
 
                 {/* Skills Grid */}
-                <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 text-center py-8'>
+                <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 text-center py-8 text-gray-300'>
                     {skills.map((skill, index) => (
                         <div
                             key={index}

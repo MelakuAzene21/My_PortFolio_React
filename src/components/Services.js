@@ -66,7 +66,7 @@ const Services = () => {
     }, []);
 
     return (
-        <div name='services' id='service' className='w-full min-h-screen bg-gradient-to-b from-[#0a192f] to-[#1e2a38] text-gray-300 flex items-center justify-center'>
+        <div name='services' id='service' className='w-full min-h-screen dark:bg-gray-900 dark:text-gray-300 flex items-center justify-center'>
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col w-full'>
                 <div className='w-full flex justify-center items-center flex-col mb-7'>
                     <p className='text-4xl font-bold border-b-4 border-cyan-500'>Services</p>

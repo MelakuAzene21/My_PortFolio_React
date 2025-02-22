@@ -12,7 +12,7 @@ const Resume = () => {
     }, []);
 
     return (
-        <div className="container1 sm:mb-6" id="resume">
+        <div className=" container1 dark:bg-gray-900 dark:text-gray-300 text-gray-700 sm:mb-6  rounded-lg shadow-lg shadow-cyan-500/50" id="resume">
             <div className="header1" data-aos="fade-down">
                 <div className="img-area1" data-aos="zoom-in">
                     <img src={mele} alt="CVimg" width="400" height="200" />
@@ -20,7 +20,7 @@ const Resume = () => {
                 <h1 data-aos="fade-right" className="text-3xl font-bold text-green-400">Melaku Azene</h1>
                 <h3 data-aos="fade-left" className="text-xl text-cyan-400">Full Stack Developer</h3>
             </div>
-            <div className="main1">
+            <div className="main1  text-gray-800 dark:text-gray-300 rounded-lg shadow-lg shadow-cyan-500/50">
                 {/* Left Section */}
                 <div className="left1" data-aos="fade-up">
                     <h2>Personal Information</h2>
@@ -67,7 +67,7 @@ const Resume = () => {
                     <h2>Work Experience</h2>
 
                     {/* Efuyegella Software Company */}
-                    <div className="mb-6">
+                    <div className="mb-6  text-gray-800 dark:text-gray-300">
                         <h3 className="text-xl font-semibold text-cyan-400">Full Stack Developer Intern</h3>
                         <p className="text-sm text-gray-400">Efuyegella Software Company | 5 Months</p>
                         <ul className="list-disc list-inside mt-2">
@@ -79,10 +79,10 @@ const Resume = () => {
                     </div>
 
                     {/* Pixel Addis Software Company */}
-                    <div className="mb-6">
+                    <div className="mb-6  text-gray-800  dark:text-gray-300">
                         <h3 className="text-xl font-semibold text-cyan-400">Backend Developer Intern (Paid)</h3>
                         <p className="text-sm text-gray-400">Pixel Addis Software Company, Addis Ababa | January 4, 2025 – Present</p>
-                        <ul className="list-disc list-inside mt-2">
+                        <ul className="list-disc list-inside mt-2 ">
                             <li>Designed and implemented robust backend solutions using Node.js and Express.js.</li>
                             <li>Developed API services to improve software efficiency and scalability.</li>
                             <li>Collaborated with frontend developers for seamless integration.</li>

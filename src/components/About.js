@@ -27,10 +27,10 @@ const About = () => {
         <div
             name="about"
             id="about"
-            className="w-full  bg-gradient-to-b from-[#0a192f] to-[#112240]  text-gray-300"
+            className="w-full  dark:bg-gray-900 dark:text-gray-300  "
         >
             <div className="flex flex-col justify-center items-center w-full h-full ">
-                <div className="py-16 rounded-3xl my-4 bg-gray-900 flex flex-col justify-center items-center w-full shadow-lg shadow-cyan-500/50">
+                <div className="py-16 rounded-3xl my-4 flex flex-col justify-center items-center w-full shadow-lg shadow-cyan-500/50">
                     <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8 mb-4">
                         <div className="sm:text-right pb-8 pl-4">
                             <p className="text-4xl font-bold inline border-b-4 border-cyan-500">
@@ -55,8 +55,9 @@ const About = () => {
 
                         {/* Right Section: Text */}
                         <div
-                            className="flex flex-col gap-6 text-gray-300"
+                            className="flex flex-col gap-6 text-gray-800  dark:text-gray-300"
                             data-aos="fade-left"
+                           
                         >
                             <div className="flex items-center gap-4">
                                 <span className="text-cyan-500 text-2xl">

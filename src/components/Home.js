@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div
             name="home"
-            className="h-screen w-full bg-gradient-to-b from-[#0a192f] to-[#112240] flex items-center justify-center"
+            className="h-screen w-full dark:bg-gray-900 dark:text-gray-800 flex items-center justify-center"
         >
             <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-between h-full px-6 gap-12">
                 {/* Left Section */}
@@ -27,7 +27,7 @@ const Home = () => {
                     </h1>
 
                     {/* Short Description */}
-                    <p className="text-gray-300 py-6 max-w-md">
+                    <p className="text-gray-700  dark:text-gray-300 py-6 max-w-md">
                         I'm a Junior Full Stack Web Developer passionate about building modern, responsive, and scalable web applications using React, Tailwind, Node.js, and MongoDB. Always eager to learn and grow!
                     </p>
 

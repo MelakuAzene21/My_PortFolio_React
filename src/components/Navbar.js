@@ -206,7 +206,7 @@ const Navbar = () => {
                 {/* Dark/Light Mode Toggle */}
                 <li>
                     <button onClick={toggleTheme} className="text-xl">
-                        {theme === "dark" ? <FaSun className="text-yellow-400" /> : <FaMoon className="text-gray-700" />}
+                        {theme === "dark" ? <FaSun className="text-yellow-400" /> : <FaMoon className="text-gray-300" />}
                     </button>
                 </li>
             </ul>
