@@ -5,6 +5,7 @@
 @layer base { 
     body {
         @apply font-[Raleway];
+        overflow-x: hidden
     }
     li {
         @apply px-4;
