@@ -3,7 +3,6 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 import mele from '../assets/mele.jpg';
 import { Link } from "react-scroll";
 import Typical from "react-typical";
-import '../App.css';
 
 const Home = () => {
     return (

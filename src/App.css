@@ -1,94 +1,19 @@
-.App {
-  text-align: center;
+/* App.css */
+/* Default Dark Mode */
+:root {
+  --bg-color: #0a192f;
+  --text-color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Light Mode */
+.light {
+  --bg-color: #f8f9fa;
+  --text-color: #0a192f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Skill Card Styles */
-.skill-card {
-  background: rgba(255, 255, 255, 0.1);
-  /* Semi-transparent background */
-  border-radius: 10px;
-  /* Rounded corners */
-  padding: 20px;
-  /* Padding around the text */
-  transition: background 0.3s, transform 0.5s;
-  /* Smooth background and scale transitions */
-}
-
-.skill-card:hover {
-  background: rgba(255, 255, 255, 0.2);
-  /* Change background on hover */
-}
-
-/* Optional: Add AOS Animation Styles */
-[data-aos] {
-  opacity: 0;
-  /* Initially hidden */
-  transition-property: opacity, transform;
-  /* Transition properties */
-}
-
-[data-aos].aos-animate {
-  opacity: 1;
-  /* Visible when animated */
-}
-.service-card {
-  position: relative;
-  /* Ensure the card positioning is relative for absolute elements */
-  transition: transform 0.3s ease;
-  /* Smooth transition for scaling */
-}
-
-.service-card:hover {
-  transform: scale(1.05);
-  /* Scale up slightly on hover */
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fadeIn 1s ease forwards;
+/* Apply styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
 }
