@@ -10,6 +10,7 @@ import newsAppImg from '../assets/newsApp.png';
 import weatherAppImg from '../assets/weather.png';
 import eventImg from '../assets/event.png';
 import pharmacyImg from '../assets/pharmacy.png';
+import userFinder from '../assets/user-finder.png';
 // Reusable Work Item Component
 const WorkItem = ({ title, description, demoLink, codeLink, bgImage, animation, index }) => {
     return (
@@ -52,6 +53,7 @@ const Works = () => {
         { title: 'Rick and Morty', description: 'Rick and Morty app built with React and MongoDB.', demoLink: 'https://rick-and-morty-melaku.vercel.app', codeLink: '/', bgImage: rickMortyImg },
         { title: 'News-App', description: 'News app for global news updates.', demoLink: 'https://news-website-in-node.onrender.com/', codeLink: '/', bgImage: newsAppImg },
         { title: 'Weather App', description: 'Weather forecasting app built with React.', demoLink: 'https://weather-forecast-web-app-chi.vercel.app/', codeLink: '/', bgImage: weatherAppImg },
+        { title: 'Plateform-User-Finder', description: 'User Finder app built with React with Typescript.', demoLink: 'https://user-finder-6uv1oz79t-melaku-azenes-projects.vercel.app/', codeLink: '/', bgImage: userFinder },
         { title: 'Event Management System', description: 'Create events, sell tickets, and more.', demoLink: '/', codeLink: '/', bgImage: eventImg },
     ];
 
