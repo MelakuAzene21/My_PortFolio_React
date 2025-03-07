@@ -11,6 +11,7 @@ import weatherAppImg from '../assets/weather.png';
 import eventImg from '../assets/event.png';
 import pharmacyImg from '../assets/pharmacy.png';
 import userFinder from '../assets/user-finder.png';
+import movies from '../assets/movies.png'
 // Reusable Work Item Component
 const WorkItem = ({ title, description, demoLink, codeLink, bgImage, animation, index }) => {
     return (
@@ -49,6 +50,7 @@ const Works = () => {
     const workItems = [
         { title: 'Ecommerce', description: 'An Ecommerce built with React, MongoDB, and Node.', demoLink: 'https://e-market-hbf7.onrender.com', codeLink: '/', bgImage: ecommerceImg },
         { title: 'Pharmacy Management System', description: 'Pharmacy Management System built with React.', demoLink: 'https://incredible-salamander-ba3ec5.netlify.app//', codeLink: '/', bgImage: pharmacyImg },
+        { title: 'Cinema Stream and TV Shows ', description: 'a Cinema stream and TV Shows built with React and TMDB.', demoLink: 'https://cinemastream-tv-shows-6cymlqlh9-melaku-azenes-projects.vercel.app/', codeLink: '/', bgImage: movies },
         { title: 'Currency Converter', description: 'Currency Converter built with React.', demoLink: 'https://currency-converter-mern-melekus-websites.onrender.com/', codeLink: '/', bgImage: currencyImg },
         { title: 'Rick and Morty', description: 'Rick and Morty app built with React and MongoDB.', demoLink: 'https://rick-and-morty-melaku.vercel.app', codeLink: '/', bgImage: rickMortyImg },
         { title: 'News-App', description: 'News app for global news updates.', demoLink: 'https://news-website-in-node.onrender.com/', codeLink: '/', bgImage: newsAppImg },
