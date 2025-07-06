@@ -8,7 +8,7 @@ import currencyImg from '../assets/currency.png';
 import rickMortyImg from '../assets/rickandmorty.png';
 import newsAppImg from '../assets/newsApp.png';
 import weatherAppImg from '../assets/weather.png';
-import eventHomePage from '../assets/event.png';
+import eventHomePage from '../assets/eventHomePage.png';
 import pharmacyImg from '../assets/pharmacy.png';
 import userFinder from '../assets/user-finder.png';
 import movies from '../assets/movies.png'

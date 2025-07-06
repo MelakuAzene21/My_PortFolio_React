@@ -5,7 +5,7 @@ import "aos/dist/aos.css"; // Import AOS CSS
 import minab from "../assets/Images/Full page photo.jpg"; // Import image
 import udacity from "../assets/Images/CERTIFICATE_UDACITY.jpg"
 import "../animate-image.css"
-import BDU1405424UR from '../assets/BDU1405424UR.jpg';
+import MYImage2 from '../assets/3C2A8521_1.JPG';
 const About = () => {
     useEffect(() => {
         AOS.init({
@@ -47,7 +47,7 @@ const About = () => {
                             data-aos="fade-right"
                         >
                             <img
-                                src={BDU1405424UR}
+                                src={MYImage2}
                                 alt="Melaku"
                                 className="rounded-lg shadow-lg shadow-cyan-500/50 w-3/4 sm:w-full max-h-[300px] object-contain"
                             />
