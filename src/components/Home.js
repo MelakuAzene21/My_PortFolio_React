@@ -51,7 +51,7 @@ const Home = () => {
                 <div className="flex justify-center items-center">
                     <img
                         src={MYImage}
-                        alt="My Profile"
+                        alt="Melaku Profile"
                         className="w-64 h-64 md:w-80 md:h-80 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:scale-110"
                     />
                 </div>
