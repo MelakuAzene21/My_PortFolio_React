@@ -12,6 +12,7 @@ import eventHomePage from '../assets/eventHomePage.png';
 import pharmacyImg from '../assets/pharmacy.png';
 import userFinder from '../assets/user-finder.png';
 import movies from '../assets/movies.png'
+import blog from '../assets/blogcoverpng.png'
 // Reusable Work Item Component
 const WorkItem = ({ title, description, demoLink, codeLink, bgImage, animation, index }) => {
     return (
@@ -50,6 +51,7 @@ const Works = () => {
     const workItems = [
         { title: 'Event Management System', description: 'Create events, sell tickets, and more.', demoLink: 'https://event-hub-vercel.vercel.app/', codeLink: '/', bgImage: eventHomePage },
         { title: 'Ecommerce', description: 'An Ecommerce built with React, MongoDB, and Node.', demoLink: 'https://e-market-hbf7.onrender.com', codeLink: '/', bgImage: ecommerceImg },
+        { title: 'Blog', description: 'Blog app built with React, .', demoLink: 'https://blog-app-wheat-mu.vercel.app/', codeLink: '/', bgImage: blog },
         { title: 'Cinema Stream and TV Shows ', description: 'a Cinema stream and TV Shows built with React and TMDB.', demoLink: 'https://cinemastream-tv-shows-6cymlqlh9-melaku-azenes-projects.vercel.app/', codeLink: '/', bgImage: movies },
         { title: 'News-App', description: 'News app for global news updates.', demoLink: 'https://news-website-in-node.onrender.com/', codeLink: '/', bgImage: newsAppImg },
         { title: 'Weather App', description: 'Weather forecasting app built with React.', demoLink: 'https://weather-forecast-web-app-chi.vercel.app/', codeLink: '/', bgImage: weatherAppImg },
