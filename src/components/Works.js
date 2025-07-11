@@ -13,6 +13,7 @@ import pharmacyImg from '../assets/pharmacy.png';
 import userFinder from '../assets/user-finder.png';
 import movies from '../assets/movies.png'
 import blog from '../assets/blogcoverpng.png'
+import clinicImage from '../assets/clinicCover.png'
 // Reusable Work Item Component
 const WorkItem = ({ title, description, demoLink, codeLink, bgImage, animation, index }) => {
     return (
@@ -51,11 +52,13 @@ const Works = () => {
     const workItems = [
         { title: 'Event Management System', description: 'Create events, sell tickets, and more.', demoLink: 'https://event-hub-vercel.vercel.app/', codeLink: '/', bgImage: eventHomePage },
         { title: 'Ecommerce', description: 'An Ecommerce built with React, MongoDB, and Node.', demoLink: 'https://e-market-hbf7.onrender.com', codeLink: '/', bgImage: ecommerceImg },
+        { title: 'Clinic Appointement', description: 'Clinic Appointement web app built with React,...', demoLink: 'https://clinic-appointment-nine.vercel.app/', codeLink: '/', bgImage: clinicImage },
+
         { title: 'Blog', description: 'Blog app built with React, .', demoLink: 'https://blog-app-wheat-mu.vercel.app/', codeLink: '/', bgImage: blog },
-        { title: 'Cinema Stream and TV Shows ', description: 'a Cinema stream and TV Shows built with React and TMDB.', demoLink: 'https://cinemastream-tv-shows-6cymlqlh9-melaku-azenes-projects.vercel.app/', codeLink: '/', bgImage: movies },
+        { title: 'Cinema Stream and TV Shows ', description: 'a Cinema stream and TV Shows built with React and TMDB.', demoLink: 'https://cinema-stream-and-tv-shows.vercel.app/', codeLink: '/', bgImage: movies },
         { title: 'News-App', description: 'News app for global news updates.', demoLink: 'https://news-website-in-node.onrender.com/', codeLink: '/', bgImage: newsAppImg },
         { title: 'Weather App', description: 'Weather forecasting app built with React.', demoLink: 'https://weather-forecast-web-app-chi.vercel.app/', codeLink: '/', bgImage: weatherAppImg },
-        { title: 'Plateform-User-Finder', description: 'User Finder app built with React with Typescript.', demoLink: 'https://user-finder-6uv1oz79t-melaku-azenes-projects.vercel.app/', codeLink: '/', bgImage: userFinder },
+        { title: 'Plateform-User-Finder', description: 'User Finder app built with React with Typescript.', demoLink: 'https://user-finder-app-pi.vercel.app/', codeLink: '/', bgImage: userFinder },
         { title: 'Rick and Morty', description: 'Rick and Morty app built with React and MongoDB.', demoLink: 'https://rick-and-morty-melaku.vercel.app', codeLink: '/', bgImage: rickMortyImg },
         { title: 'Pharmacy Management System', description: 'Pharmacy Management System built with React.', demoLink: 'https://incredible-salamander-ba3ec5.netlify.app//', codeLink: '/', bgImage: pharmacyImg },
         { title: 'Currency Converter', description: 'Currency Converter built with React.', demoLink: 'https://currency-converter-mern-melekus-websites.onrender.com/', codeLink: '/', bgImage: currencyImg },
