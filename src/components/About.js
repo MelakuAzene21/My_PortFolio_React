@@ -53,29 +53,68 @@ const About = () => {
                             />
                         </div>
 
-                        {/* Right Section: Text */}
+                        {/* Right Section: About Me */}
                         <div
-                            className="flex flex-col gap-6 text-gray-800  dark:text-gray-300"
+                            className="flex flex-col gap-6 text-gray-800 dark:text-gray-300"
                             data-aos="fade-left"
-                           
                         >
+                            {/* Developer Bio */}
                             <div className="flex items-center gap-4">
                                 <span className="text-cyan-500 text-2xl">
                                     <i className="fas fa-code"></i>
                                 </span>
                                 <p>
-                                    A <span className="text-cyan-500 font-bold">Full Stack Web Developer</span> with experience in building responsive and scalable web apps.
+                                    I'm a <span className="text-cyan-500 font-bold">MERN Stack Developer</span> with a strong passion for building modern, fast, and user-friendly web applications. I specialize in creating full-featured solutions using <span className="text-cyan-500 font-semibold">MongoDB, Express.js, React, and Node.js</span>.
                                 </p>
                             </div>
+
+                            {/* Passion & Mission */}
                             <div className="flex items-center gap-4">
                                 <span className="text-cyan-500 text-2xl">
-                                    <i className="fas fa-pen-alt"></i>
+                                    <i className="fas fa-bolt"></i>
                                 </span>
                                 <p>
-                                    Passionate <span className="text-cyan-500 font-bold">Technical Writer</span>, simplifying concepts and sharing knowledge.
+                                    I enjoy turning complex problems into clean, elegant solutions. My goal is to deliver impactful digital experiences through scalable and maintainable code.
                                 </p>
                             </div>
+
+                              {/* Social Links */}
+                            <div className="flex flex-wrap justify-center gap-8 pt-2 text-lg  ml-4">
+                                <a
+                                    href="https://github.com/MelakuAzene21"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-cyan-500 transition-colors text-wh"
+                                >
+                                    <i className="fab fa-github text-2xl"></i>
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/help/linkedin/answer/a1631613"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-cyan-500 transition-colors"
+                                >
+                                    <i className="fab fa-linkedin text-2xl"></i>
+                                </a>
+                                <a
+                                    href="https://t.me/melaku_tech"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-cyan-500 transition-colors"
+                                >
+                                    <i className="fab fa-telegram text-2xl"></i>
+                                </a>
+                                <a
+                                    href="https://www.instagram.com/melakuaz_21/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-red-500 transition-colors"
+                                >
+                                    <i className="fab fa-instagram text-2xl"></i>
+                                </a>
+                            </div>
                         </div>
+
                     </div>
 
 
