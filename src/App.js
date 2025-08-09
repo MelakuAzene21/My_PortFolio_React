@@ -56,8 +56,8 @@ export default function App() {
         <Navbar />
         <Home />
         <About />
-        <Skills />
         <Works />
+        <Skills />       
         <Services />
         <Resume />
         <Contact />
