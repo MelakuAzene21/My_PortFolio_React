@@ -66,6 +66,23 @@ const Resume = () => {
                 <div className="right" data-aos="fade-left">
                     <h2>Work Experience</h2>
 
+                    {/* Pixel Addis Software Company */}
+                    <div className="mb-6 text-gray-800 dark:text-gray-300">
+                        <h3 className="text-xl font-semibold text-cyan-400">Full Stack Developer</h3>
+                        <p className="text-sm text-gray-400">
+                            Pixel Addis Software Company, Addis Ababa | January 2025 – June 2025
+                        </p>
+                        <ul className="list-disc list-inside mt-2">
+                            <li>Hired as a Full Stack Developer, working on backend services using Node.js, TypeScript, TypeORM, and MySQL.</li>
+                            <li>Built responsive frontend interfaces with React and TypeScript.</li>
+                            <li>Designed and integrated RESTful APIs to improve system efficiency and scalability.</li>
+                            <li>Utilized Docker for containerization and implemented CI/CD pipelines for automated deployment.</li>
+                            <li>Collaborated with cross-functional teams in an Agile/Scrum environment to deliver high-quality software on schedule.</li>
+                        </ul>
+                    </div>
+
+                    
+                    
                     {/* Efuyegella Software Company */}
                     <div className="mb-6  text-gray-800 dark:text-gray-300">
                         <h3 className="text-xl font-semibold text-cyan-400">Full Stack Developer Intern</h3>
@@ -78,18 +95,7 @@ const Resume = () => {
                         </ul>
                     </div>
 
-                    {/* Pixel Addis Software Company */}
-                    <div className="mb-6  text-gray-800  dark:text-gray-300">
-                        <h3 className="text-xl font-semibold text-cyan-400">Backend Developer Intern (Paid)</h3>
-                        <p className="text-sm text-gray-400">Pixel Addis Software Company, Addis Ababa | January 4, 2025 – Present</p>
-                        <ul className="list-disc list-inside mt-2 ">
-                            <li>Designed and implemented robust backend solutions using Node.js and Express.js.</li>
-                            <li>Developed API services to improve software efficiency and scalability.</li>
-                            <li>Collaborated with frontend developers for seamless integration.</li>
-                            <li>Applied agile practices to deliver high-quality software on schedule.</li>
-                            <li>Enhanced security and performance of backend systems to meet industry standards.</li>
-                        </ul>
-                    </div>
+                    
                 </div>
             </div>
         </div>
