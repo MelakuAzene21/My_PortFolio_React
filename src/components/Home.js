@@ -1,3 +1,7 @@
+// Updated Home.js
+// Changes: Added a "Download CV" button next to "About Me" button, styled similarly.
+// The button uses a regular <a> tag for download, linking to the backend endpoint /api/download-cv.
+// Wrapped buttons in a flex div for side-by-side placement on larger screens.
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import MYImage from '../assets/3C2A8512.JPG';
@@ -27,23 +31,30 @@ const Home = () => {
                     </h1>
 
                     {/* Short Description */}
-                    <p className="text-gray-700  dark:text-gray-300 py-6 max-w-md">
+                    <p className="text-gray-700 dark:text-gray-300 py-6 max-w-md">
                         I'm a Junior Full Stack Web Developer passionate about building modern, responsive, and scalable web applications using React, Tailwind, Node.js, and MongoDB. Always eager to learn and grow!
                     </p>
 
-                    {/* Button */}
-                    <div>
+                    {/* Buttons */}
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                         <Link
                             to="about"
                             smooth
                             duration={500}
-                            className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500 cursor-pointer transition-transform transform hover:scale-105"
+                            className="group text-white w-fit px-6 py-3 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500 cursor-pointer transition-transform transform hover:scale-105"
                         >
                             About Me
                             <span className="group-hover:rotate-90 duration-300">
                                 <HiArrowNarrowRight size={25} className="ml-3" />
                             </span>
                         </Link>
+                        <a
+                            href="http://localhost:5000/api/download-cv"
+                            download
+                            className="group text-white w-fit px-6 py-3 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500 cursor-pointer transition-transform transform hover:scale-105"
+                        >
+                            Download CV
+                        </a>
                     </div>
                 </div>
 
