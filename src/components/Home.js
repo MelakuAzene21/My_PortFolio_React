@@ -7,6 +7,11 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 import MYImage from '../assets/3C2A8512.JPG';
 import { Link } from "react-scroll";
 import Typical from "react-typical";
+// frontend/src/utils/api.js
+export const BASE_URL =
+    process.env.NODE_ENV === "production"
+        ? "https://my-portfolio-backend-1-lh7p.onrender.com"
+        : "http://localhost:5000";
 
 const Home = () => {
     return (
@@ -49,7 +54,7 @@ const Home = () => {
                             </span>
                         </Link>
                         <a
-                            href="http://localhost:5000/api/download-cv"
+                            href={`${BASE_URL}/api/download-cv`}
                             download
                             className="group text-white w-fit px-6 py-3 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500 cursor-pointer transition-transform transform hover:scale-105"
                         >

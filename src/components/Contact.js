@@ -13,7 +13,10 @@ const Contact = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(false);
-
+    const BASE_URL =
+        process.env.NODE_ENV === "production"
+            ? "https://my-portfolio-backend-1-lh7p.onrender.com"
+            : "http://localhost:5000";
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({
@@ -33,10 +36,10 @@ const Contact = () => {
         setSuccess(false);
 
         try {
-            const response = await fetch('http://localhost:5000/api/contact', {
-                method: 'POST',
+            const response = await fetch(`${BASE_URL}/api/contact`, {
+                method: "POST",
                 headers: {
-                    'Content-Type': 'application/json',
+                    "Content-Type": "application/json",
                 },
                 body: JSON.stringify(formData),
             });
