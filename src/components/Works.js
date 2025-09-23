@@ -14,6 +14,7 @@ import userFinder from '../assets/user-finder.png';
 import movies from '../assets/movies.png'
 import blog from '../assets/blogcoverpng.png'
 import clinicImage from '../assets/clinicCover.png'
+import TalentHub from '../assets/Talent-hub.png'
 // Reusable Work Item Component
 const WorkItem = ({ title, description, demoLink, codeLink, bgImage, animation, index }) => {
     return (
@@ -51,9 +52,10 @@ const Works = () => {
     // Project details with unique images
     const workItems = [
         { title: 'Event Management System', description: 'Create events, sell tickets, and more.', demoLink: 'https://event-hub-vercel.vercel.app/', codeLink: 'https://github.com/MelakuAzene21/Event-Management-Systems', bgImage: eventHomePage },
+        { title: 'Talent Hub Jobs', description: 'Talent Hub portal web app built with MERN,...', demoLink: 'https://talent-hub-one.vercel.app', codeLink: 'https://github.com/MelakuAzene21/Talent-Hub-Job-Portal', bgImage: TalentHub },
         { title: 'Ecommerce', description: 'An Ecommerce built with React, MongoDB, and Node.', demoLink: 'https://e-market-hbf7.onrender.com', codeLink: 'https://github.com/MelakuAzene21/Sheger-Gebeya', bgImage: ecommerceImg },
-        { title: 'Clinic Appointement', description: 'Clinic Appointement web app built with React,...', demoLink: 'https://clinic-appointment-nine.vercel.app/', codeLink: 'https://github.com/MelakuAzene21/Clinic-Appointment', bgImage: clinicImage },
 
+        { title: 'Clinic Appointement', description: 'Clinic Appointement web app built with React,...', demoLink: 'https://clinic-appointment-nine.vercel.app/', codeLink: 'https://github.com/MelakuAzene21/Clinic-Appointment', bgImage: clinicImage },
         { title: 'Blog', description: 'Blog app built with React, .', demoLink: 'https://blog-app-wheat-mu.vercel.app/', codeLink: 'https://github.com/MelakuAzene21/Blog-App', bgImage: blog },
         { title: 'Cinema Stream and TV Shows ', description: 'a Cinema stream and TV Shows built with React and TMDB.', demoLink: 'https://cinema-stream-and-tv-shows.vercel.app/', codeLink: 'https://github.com/MelakuAzene21/cinema-stream-and-tv-shows', bgImage: movies },
         { title: 'News-App', description: 'News app for global news updates.', demoLink: 'https://news-website-in-node.onrender.com/', codeLink: 'https://github.com/MelakuAzene21/News-Website-in-node', bgImage: newsAppImg },
