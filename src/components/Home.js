@@ -37,7 +37,7 @@ const Home = () => {
 
                     {/* Short Description */}
                     <p className="text-gray-700 dark:text-gray-300 py-6 max-w-md">
-                        I'm a Junior Full Stack Web Developer passionate about building modern, responsive, and scalable web applications using React, Tailwind, Node.js, and MongoDB. Always eager to learn and grow!
+                        I'm a  <span className="text-green-500" >Full Stack</span>  and Interactive <span className='text-green-500'>Telegram Bot</span>  development Developer passionate about building modern, responsive, and scalable web applications using React,Typescript, Tailwind, Node.js, and MongoDB. Always eager to learn and grow!
                     </p>
 
                     {/* Buttons */}

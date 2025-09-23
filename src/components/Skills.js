@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import AOS from 'aos'; // Import AOS
 import 'aos/dist/aos.css'; // Import AOS CSS
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaGithub, FaNodeJs } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiTailwindcss, SiGraphql } from 'react-icons/si';
+import { SiMongodb, SiNextdotjs, SiSocketdotio, SiStripe,  SiExpress, SiTailwindcss, SiGraphql, SiFirebase } from 'react-icons/si';
+import { TbBrandTelegram } from 'react-icons/tb';
 
 const Skills = () => {
     useEffect(() => {
@@ -16,6 +17,11 @@ const Skills = () => {
         { name: 'CSS', icon: <FaCss3Alt className="text-blue-600" /> },
         { name: 'JavaScript', icon: <FaJsSquare className="text-yellow-500" /> },
         { name: 'React', icon: <FaReact className="text-cyan-500" /> },
+        { name: 'NextJS', icon: <SiNextdotjs className="text-cyan-500" /> },
+        { name: 'Socket.io', icon: <SiSocketdotio className="text-cyan-500" /> },
+        { name: 'FireBase', icon: <SiFirebase className="text-cyan-500" /> },
+        { name: 'Stripe', icon: <SiStripe className="text-cyan-500" /> },
+        { name: 'Telegram Bot', icon: <TbBrandTelegram className="text-cyan-500" /> },
         { name: 'GitHub', icon: <FaGithub className="text-gray-300" /> },
         { name: 'Node.js', icon: <FaNodeJs className="text-green-600" /> },
         { name: 'MongoDB', icon: <SiMongodb className="text-green-500" /> },

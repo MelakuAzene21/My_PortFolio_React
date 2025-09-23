@@ -9,12 +9,13 @@ import rickMortyImg from '../assets/rickandmorty.png';
 import newsAppImg from '../assets/newsApp.png';
 import weatherAppImg from '../assets/weather.png';
 import eventHomePage from '../assets/eventHomePage.png';
-import pharmacyImg from '../assets/pharmacy.png';
 import userFinder from '../assets/user-finder.png';
 import movies from '../assets/movies.png'
 import blog from '../assets/blogcoverpng.png'
 import clinicImage from '../assets/clinicCover.png'
 import TalentHub from '../assets/Talent-hub.png'
+import CryptoDashboard from '../assets/CryptoDashboard.png'
+import RealTimeChatting from "../assets/Real-Time-Chatting.png"
 // Reusable Work Item Component
 const WorkItem = ({ title, description, demoLink, codeLink, bgImage, animation, index }) => {
     return (
@@ -52,17 +53,18 @@ const Works = () => {
     // Project details with unique images
     const workItems = [
         { title: 'Event Management System', description: 'Create events, sell tickets, and more.', demoLink: 'https://event-hub-vercel.vercel.app/', codeLink: 'https://github.com/MelakuAzene21/Event-Management-Systems', bgImage: eventHomePage },
-        { title: 'Talent Hub Jobs', description: 'Talent Hub portal web app built with MERN,...', demoLink: 'https://talent-hub-one.vercel.app', codeLink: 'https://github.com/MelakuAzene21/Talent-Hub-Job-Portal', bgImage: TalentHub },
+        { title: 'Talent Hub Jobs', description: 'Talent Hub portal web app built with MERN with Typescript,...', demoLink: 'https://talent-hub-one.vercel.app', codeLink: 'https://github.com/MelakuAzene21/Talent-Hub-Job-Portal', bgImage: TalentHub },
         { title: 'Ecommerce', description: 'An Ecommerce built with React, MongoDB, and Node.', demoLink: 'https://e-market-hbf7.onrender.com', codeLink: 'https://github.com/MelakuAzene21/Sheger-Gebeya', bgImage: ecommerceImg },
+        { title: 'Real Time Chatt App', description: 'Chatting built with React, MongoDB, and Node.', demoLink: 'https://real-time-chat-web-app-1-89on.onrender.com/', codeLink: 'https://github.com/MelakuAzene21/Real-Time-Chat-Web-App', bgImage: RealTimeChatting },
 
-        { title: 'Clinic Appointement', description: 'Clinic Appointement web app built with React,...', demoLink: 'https://clinic-appointment-nine.vercel.app/', codeLink: 'https://github.com/MelakuAzene21/Clinic-Appointment', bgImage: clinicImage },
-        { title: 'Blog', description: 'Blog app built with React, .', demoLink: 'https://blog-app-wheat-mu.vercel.app/', codeLink: 'https://github.com/MelakuAzene21/Blog-App', bgImage: blog },
+        { title: 'Crypto Dashboard', description: 'Crypto Dashboard web app built with Typescript,...', demoLink: '', codeLink: 'https://github.com/MelakuAzene21/Crypto-Dashboard', bgImage: CryptoDashboard },
         { title: 'Cinema Stream and TV Shows ', description: 'a Cinema stream and TV Shows built with React and TMDB.', demoLink: 'https://cinema-stream-and-tv-shows.vercel.app/', codeLink: 'https://github.com/MelakuAzene21/cinema-stream-and-tv-shows', bgImage: movies },
+        { title: 'Clinic Appointement', description: 'Clinic Appointement web app built with React,...', demoLink: 'https://clinic-appointment-nine.vercel.app/', codeLink: 'https://github.com/MelakuAzene21/Clinic-Appointment', bgImage: clinicImage },
+        { title: 'Blog', description: 'Blog app built with TYpescript, .', demoLink: 'https://blog-app-wheat-mu.vercel.app/', codeLink: 'https://github.com/MelakuAzene21/Blog-App', bgImage: blog },
         { title: 'News-App', description: 'News app for global news updates.', demoLink: 'https://news-website-in-node.onrender.com/', codeLink: 'https://github.com/MelakuAzene21/News-Website-in-node', bgImage: newsAppImg },
         { title: 'Weather App', description: 'Weather forecasting app built with React.', demoLink: 'https://weather-forecast-web-app-chi.vercel.app/', codeLink: 'https://github.com/MelakuAzene21/Weather-Forecast-Web-App', bgImage: weatherAppImg },
         { title: 'Plateform-User-Finder', description: 'User Finder app built with React with Typescript.', demoLink: 'https://user-finder-app-pi.vercel.app/', codeLink: 'https://github.com/MelakuAzene21/User-finder-App', bgImage: userFinder },
         { title: 'Rick and Morty', description: 'Rick and Morty app built with React and MongoDB.', demoLink: 'https://rick-and-morty-melaku.vercel.app', codeLink: 'https://github.com/MelakuAzene21/RickAnd-Morty', bgImage: rickMortyImg },
-        { title: 'Pharmacy Management System', description: 'Pharmacy Management System built with React.', demoLink: 'https://incredible-salamander-ba3ec5.netlify.app//', codeLink: '/', bgImage: pharmacyImg },
         { title: 'Currency Converter', description: 'Currency Converter built with React.', demoLink: 'https://currency-converter-mern-melekus-websites.onrender.com/', codeLink: '/', bgImage: currencyImg },
 
     ];

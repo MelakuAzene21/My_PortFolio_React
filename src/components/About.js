@@ -64,7 +64,17 @@ const About = () => {
                                     <i className="fas fa-code"></i>
                                 </span>
                                 <p>
-                                    I'm a <span className="text-cyan-500 font-bold">MERN Stack Developer</span> with a strong passion for building modern, fast, and user-friendly web applications. I specialize in creating full-featured solutions using <span className="text-cyan-500 font-semibold">MongoDB, Express.js, React, and Node.js</span>.
+                                    I'm a <span className="text-cyan-500 font-bold">Computer Science graduate from Bahir Dar University</span> with a <span className="text-cyan-500 font-semibold">3.78 CGPA</span> and <span className="text-cyan-500 font-semibold">81% on the Exit Exam</span>, now specializing as a MERN Stack Developer. I bring strong analytical skills and a passion for building modern, high-performance web applications.
+                                </p>
+                            </div>
+
+                            {/* Technical Expertise */}
+                            <div className="flex items-center gap-4">
+                                <span className="text-cyan-500 text-2xl">
+                                    <i className="fas fa-layer-group"></i>
+                                </span>
+                                <p>
+                                    I specialize in full-stack development using <span className="text-cyan-500 font-semibold">MongoDB, Express.js, React, and Node.js</span>, with expertise in <span className="text-cyan-500 font-semibold">Socket.io</span> for real-time features, <span className="text-cyan-500 font-semibold">Stripe/Chapa</span> for payment integrations, and <span className="text-cyan-500 font-semibold">Telegram Bot</span> development.
                                 </p>
                             </div>
 
@@ -74,7 +84,7 @@ const About = () => {
                                     <i className="fas fa-bolt"></i>
                                 </span>
                                 <p>
-                                    I enjoy turning complex problems into clean, elegant solutions. My goal is to deliver impactful digital experiences through scalable and maintainable code.
+                                    I enjoy turning complex problems into clean, elegant solutions. My academic excellence fuels my goal to deliver impactful digital experiences through scalable, maintainable code and cutting-edge technologies.
                                 </p>
                             </div>
 
