@@ -55,7 +55,8 @@ const Home = () => {
                         </Link>
                         <a
                             href={`${BASE_URL}/api/download-cv`}
-                            download
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="group text-white w-fit px-6 py-3 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500 cursor-pointer transition-transform transform hover:scale-105"
                         >
                             Download CV
